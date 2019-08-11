@@ -1,14 +1,14 @@
 $(document).ready(function () {
 
-  var firebaseConfig = {
-    apiKey: "AIzaSyD6yJ9lLoShHfdIMQd4KeunTxUi7NQ-wmU",
-    authDomain: "train-scheduler-28c46.firebaseapp.com",
-    databaseURL: "https://train-scheduler-28c46.firebaseio.com",
-    projectId: "train-scheduler-28c46",
-    storageBucket: "",
-    messagingSenderId: "634500321721",
-    appId: "1:634500321721:web:a4d14cfbb6dee6ed"
-  };
+    const firebaseConfig = {
+        apiKey: "AIzaSyD6yJ9lLoShHfdIMQd4KeunTxUi7NQ-wmU",
+        authDomain: "train-scheduler-28c46.firebaseapp.com",
+        databaseURL: "https://train-scheduler-28c46.firebaseio.com",
+        projectId: "train-scheduler-28c46",
+        storageBucket: "",
+        messagingSenderId: "634500321721",
+        appId: "1:634500321721:web:a4d14cfbb6dee6ed"
+      };
   
   firebase.initializeApp(firebaseConfig);
 
@@ -21,7 +21,7 @@ $(document).ready(function () {
         var trainName = $("#trainName").val().trim();
         var destination = $("#destination").val().trim();
         var firstTrain = $("#firstTrain").val().trim();
-        var freq = $("#interval").val().trim();
+        var freq = $("#frequency").val().trim();
     
        
         database.ref().push({
