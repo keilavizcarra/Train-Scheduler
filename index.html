@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Train Scheduler</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+
+  <!-- Moment JS -->
+  <script type="text/javascript" src="https://momentjs.com/downloads/moment.js"></script>
+
+</head>
+
+
+
+<body>
+
+  <div class="container">
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+      <h1 class="text-center">
+        <h1>Anytime is train time</h1>
+        <h2>Choo Choo. Chee Chee</h2>
+
+      </h1>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <br>
+
+        <div class="card">
+     
+          <div class="card-header">
+            <strong>
+              <i class="fa fa-table"></i> Current Train Schedule</strong>
+          </div>
+
+              <!-- Table -->
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Train Name</th>
+          <th>Destination</th>
+          <th>Frequency (min)</th>
+          <th>Next Arrival</th>
+          <th>Minutes Away</th>
+        </tr>
+      </thead>
+      <tbody id="all-display">
+      </tbody>
+    </table>
+
+          <div class="card-body" id="article-section">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+
+  
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="container">
+    <!-- Searching -->
+    <div class="row">
+      <div class="col-sm-12">
+        <br>
+        
+        <div class="card">
+          <div class="card-header">
+            <strong>
+              <i class="fa fa-list-alt"></i> Add Train</strong>
+          </div>
+          <div class="card-body">
+ 
+            <form role="form">
+             
+              <div class="form-group">
+                <label for="searchTerm">Train Name</label>
+                <input type="text" class="form-control" id="searchTerm">
+              </div>
+
+              <div class="form-group">
+                <label for="destination">Destination</label>
+                <input type="text" class="form-control" id="destination">
+              </div>
+
+             
+              <div class="form-group">
+                <label for="firstTrain">First Train Time (HH:mm - military time)</label>
+                <input type="text" class="form-control" id="firstTrain">
+              </div>
+
+              
+              <div class="form-group">
+                <label for="frequency">Frequency (min)</label>
+                <input type="text" class="form-control" id="frequency">
+              </div>
+
+              <!-- button -->
+              <button type="submit" class="btn btn-primary" id="runSearch">
+                <i class="fa fa-search"></i> Search</button>
+      
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+    
+
+  <!-- jQuery JS -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Javascript -->
+  <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>

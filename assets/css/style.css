@@ -1,0 +1,23 @@
+
+  .card-body a {
+    word-break: break-all;
+  }
+
+  .articleHeadline {
+    line-height: 1.5;
+  }
+
+  .jumbotron {
+    background-color: maroon; 
+    
+  }
+
+  h1 {
+    color: white;
+    text-align: center;
+  }
+
+  h2 {
+    color:white;
+    text-align: center;
+  }
